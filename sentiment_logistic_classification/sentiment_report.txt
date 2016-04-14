@@ -1,0 +1,39 @@
+====== MODEL 1: Using all words in the train set as features =====
+
+Prediction accuracy of Model1 on the TRAINING set: 0.963670440063
+Prediction accuracy of Model1 on the TEST set: 0.924734728134
+Top 5 products predicted by Model1 : ['Chicco Cortina Together Double Stroller, Fuego', 'Baby Jogger City Lite Stroller, Black', 'Baby Jogger City Versa Stroller,  Black', 'Roan Rocco Classic Pram Stroller 2-in-1 with Bassinet and Seat Unit - Coffee', 'Zooper 2011 Waltz Standard Stroller, Flax Brown']
+
+====== MODEL 2: A simpler model using 20 words as features =====
+
+Prediction accuracy of Model2 on the TRAINING set: 0.867163955319
+Prediction accuracy of Model2 on the TEST set: 0.867573886458
+Top 5 products predicted by Model2: ['Chicco Cortina Together Double Stroller, Fuego', 'Ju-Ju-Be Hobo Be Diaper Bag, Dreamy Diamonds', 'Inglesina 2013 Trip Stroller, Lampone Purple', 'Evenflo Delux Developmental Activity Center, Circus', 'Zooper 2011 Waltz Standard Stroller, Flax Brown']
+
+====== A simple majority classifier =====
+
+Prediction accuracy of a majority classifier is: 0.841037559037
+
+========= Exploring the effect of l2 penalty==========
+
+Printing coefficient path to l2_coefficients.png
+
+Prediction accuracies of the train and validation set with varying L2 penalty:
+L2 penalty = 0 
+train accuracy = 0.857691407165, validation_accuracy = 0.85763667105 
+--------------------------------------------------------------------------------
+L2 penalty = 4 
+train accuracy = 0.857672676188, validation_accuracy = 0.857486379861 
+--------------------------------------------------------------------------------
+L2 penalty = 10 
+train accuracy = 0.857541559354, validation_accuracy = 0.857298515875 
+--------------------------------------------------------------------------------
+L2 penalty = 100 
+train accuracy = 0.856558183095, validation_accuracy = 0.856021040766 
+--------------------------------------------------------------------------------
+L2 penalty = 1000 
+train accuracy = 0.848681807539, validation_accuracy = 0.847792598159 
+--------------------------------------------------------------------------------
+L2 penalty = 100000 
+train accuracy = 0.841198782487, validation_accuracy = 0.840390757092 
+--------------------------------------------------------------------------------
